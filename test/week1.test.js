@@ -26,8 +26,8 @@ describe("capitalize", () => {
   });
 });
 
-xdescribe("generateInitials", () => {
-  test("returns the initials of a firstname and surname", () => {
+describe("generateInitials", () => {
+  test.only("returns the initials of a firstname and surname", () => {
     expect(generateInitials("Frederic Bonneville")).toBe("F.B");
   });
 
