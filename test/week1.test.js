@@ -13,22 +13,22 @@ const {
 } = require("../challenges/week1");
 
 describe("capitalize", () => {
-  test.only("returns a capitalized string", () => {
+  test("returns a capitalized string", () => {
     expect(capitalize("hello")).toBe("Hello");
   });
 
-  test.only("does nothing if the string is already capitalized", () => {
+  test("does nothing if the string is already capitalized", () => {
     expect(capitalize("Hello")).toBe("Hello");
   });
 
-  test.only("capitalizes the first character if the string is a sentence", () => {
+  test("capitalizes the first character if the string is a sentence", () => {
     expect(capitalize("the quick fox")).toBe("The quick fox");
   });
 });
 
 describe("generateInitials", () => {
-  test.only("returns the initials of a firstname and surname", () => {
-    expect(generateInitials("Frederic Bonneville")).toBe("F.B");
+  test("returns the initials of a firstname and surname", () => {
+    expect(generateInitials("Frederic", "Bonneville")).toBe("F.B");
   });
 
   test("returns the initials of more than 2 names", () => {
