@@ -106,7 +106,7 @@ describe("reverseAllWords", () => {
   });
 });
 
-xdescribe("countLinuxUsers", () => {
+describe("countLinuxUsers", () => {
   test("returns 0 if no Linux users found", () => {
     const users = [
       { name: "Heather", OS: "Windows 8", type: "Windows" },
@@ -142,13 +142,13 @@ xdescribe("getMeanScore", () => {
   });
 });
 
-xdescribe("simpleFizzBuzz", () => {
+describe("simpleFizzBuzz", () => {
   test("returns 'fizz' if the number is divisible by 3", () => {
     expect(simpleFizzBuzz(3)).toBe("fizz");
   });
 
   test("returns 'buzz' if the number is divisible by 5", () => {
-    expect(simpleFizzBuzz(3)).toBe("buzz");
+    expect(simpleFizzBuzz(5)).toBe("buzz");
   });
 
   test("returns the number if the number is divisible by neither 3 nor 5", () => {
