@@ -63,15 +63,11 @@ function reverseAllWords(words) {
 function countLinuxUsers(users) {
   if (users === undefined) throw new Error("users is required");
   // Add your code here!
-return users.type
-   
 }
 
 function getMeanScore(scores) {
   if (scores === undefined) throw new Error("scores is required");
   // Add your code here!
-
-
 }
 
 function simpleFizzBuzz(n) {
