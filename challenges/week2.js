@@ -38,7 +38,11 @@ function hasMPostCode(person) {
   if (person === undefined) throw new Error("person is required");
   // Your code here!
   
-   
+  else if (person.address.postCode[0].includes("M") && person.address.city === "Manchester")
+  return true
+  else 
+  return false
+
 }
 
 module.exports = {
