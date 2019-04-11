@@ -21,7 +21,17 @@ function checkIngredients(menu, ingredient) {
   if (!menu) throw new Error("menu is required");
   if (!ingredient) throw new Error("ingredient is required");
   // Your code here!
+  let ingredientContained = false
+
+  menu.forEach(function (dishName){
+    dishName.ingredients.forEach(function (individualIngredients){
+      if (individualIngredients === ingredient)
+      ingredientContained = true
+    })
+  })
+  return ingredientContained
 }
+
 
 function duplicateNumbers(arr1, arr2) {
   if (!arr1) throw new Error("arr1 is required");
